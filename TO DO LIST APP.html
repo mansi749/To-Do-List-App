@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="todoForm">
+      <input type="text" id="todoInput" placeholder="Enter a task" required>
+      <input type="date" id="todoDate" required>
+      <button type="submit">Add</button>
+    </form>
+    <div id="filters">
+      <button id="filterAll">All</button>
+      <button id="filterPending">Pending</button>
+      <button id="filterCompleted">Completed</button>
+    </div>
+    <ul id="todoList"></ul>
+  </div>
+  <script src="script.js"></script>
+  <label for="category">Category:</label>
+<select id="category" name="category">
+  <option value="Work">Work</option>
+  <option value="Personal">Personal</option>
+  <option value="School">School</option>
+  <option value="Other">Other</option>
+</select>
+</body>
+</html>
